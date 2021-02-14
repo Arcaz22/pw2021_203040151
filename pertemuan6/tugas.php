@@ -116,7 +116,7 @@ $books = [
         h1 {
             margin-bottom: 285px;
             padding: 50px;
-            border-right: 2px dotted black;
+            border-right: 2px solid black;
         }
     </style>
 </head>
