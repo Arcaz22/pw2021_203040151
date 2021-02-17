@@ -3,7 +3,7 @@
     Chandra Arcychan Azfar
     203040151
     github.com/Arcaz22/pw2021_203040151
-    Pertemuan 7( 11 Februari 2021 )
+    Pertemuan 7( 17 Februari 2021 )
     Materi Minggu ini mempelajari mengenai GET & POST
 */
 ?>
