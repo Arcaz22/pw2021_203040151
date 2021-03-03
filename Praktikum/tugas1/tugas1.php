@@ -17,7 +17,7 @@
 
 <body>
 
-    <table border="2" cellpadding="20" cellspacing="5">
+    <table border="2" cellpadding="20" cellspacing="5" align="center">
         <?php for ($i = 1; $i <= 6; $i++) : ?>
             <tr>
                 <?php for ($j = 1; $j <= 6; $j++) : ?>
