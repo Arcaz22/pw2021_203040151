@@ -11,7 +11,7 @@ $books = [
     [
         "Judul" => "SELENA",
         "Pengarang" => "Tere Liye",
-        "Terbit" => "2020",
+        "Terbit" => "16 Maret 2020",
         "Dimensi" => "368 halaman",
         "ISBN" => "9786020639512",
         "gambar" => "i.png"
@@ -19,7 +19,7 @@ $books = [
     [
         "Judul" => "Misteri Terakhir #1",
         "Pengarang" => "S. Mara Gd",
-        "Terbit" => "6 Apr 2020",
+        "Terbit" => "06 Apr 2020",
         "Dimensi" => "448 Halaman",
         "ISBN" => "9786020637112",
         "gambar" => "f.png"
@@ -27,7 +27,7 @@ $books = [
     [
         "Judul" => "Nebula",
         "Pengarang" => "Tere Liye",
-        "Terbit" => "2020",
+        "Terbit" => "16 Maret 2020",
         "Dimensi" => "376 halaman",
         "ISBN" => "9786020639536",
         "gambar" => "g.png"
@@ -43,15 +43,15 @@ $books = [
     [
         "Judul" => "Ganjil Genap",
         "Pengarang" => "Almira Bastari",
-        "Terbit" => "Februari 2020",
+        "Terbit" => "03 Februari 2020",
         "Dimensi" => "344 halaman",
-        "ISBN" => "-",
+        "ISBN" => "9786020638010",
         "gambar" => "e.png"
     ],
     [
         "Judul" => "Tokyo & Perayaan",
         "Pengarang" => "Ruth Pricilia Angelinae",
-        "Terbit" => "2020",
+        "Terbit" => "13 April 2020",
         "Dimensi" => "208 halaman",
         "ISBN" => "9786020640853",
         "gambar" => "j.png"
@@ -59,7 +59,7 @@ $books = [
     [
         "Judul" => "Segi Tiga",
         "Pengarang" => "Sapardi Djoko Damono",
-        "Terbit" => "Maret 2020",
+        "Terbit" => "29 Maret 2020",
         "Dimensi" => "328 halaman",
         "ISBN" => "9786020639246",
         "gambar" => "h.png"
@@ -67,7 +67,7 @@ $books = [
     [
         "Judul" => "Ibuk",
         "Pengarang" => "Iwan Setyawan",
-        "Terbit" => "2017",
+        "Terbit" => "06 Februari 2013",
         "Dimensi" => "289 halaman",
         "ISBN" => "9786020329987",
         "gambar" => "c.png"
@@ -75,15 +75,15 @@ $books = [
     [
         "Judul" => "Laut Bercerita",
         "Pengarang" => "Leila S. Chudori",
-        "Terbit" => "Desember 2017",
+        "Terbit" => "21 Desember 2017",
         "Dimensi" => "379 halaman",
-        "ISBN" => "-",
+        "ISBN" => "9786024246945",
         "gambar" => "d.png"
     ],
     [
         "Judul" => "Defending Jacob",
         "Pengarang" => "William Landay",
-        "Terbit" => "Desember 2017",
+        "Terbit" => "30 Januari 2019",
         "Dimensi" => "484 halaman",
         "ISBN" => "9786020451558",
         "gambar" => "b.png"
