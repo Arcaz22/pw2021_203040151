@@ -51,13 +51,3 @@ $books = query("SELECT * FROM data");
 
 </body>
 </html>
-
-<!-- <div class="container">
-  <?php foreach( $books as $row ) : ?>
-    <p class="judul">
-      <a href="php/detail.php?id=<?= $row['id'] ?>">
-        <img src="assets/gambar/<?= $row["gambar"]; ?>">
-      </a>
-    </p>   
-  </div>
-  <?php endforeach;  ?> -->

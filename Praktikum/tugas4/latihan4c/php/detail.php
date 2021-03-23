@@ -51,22 +51,3 @@ $row = query("SELECT * FROM data WHERE id= $id")[0];
     </div>
 </body>
 </html>
-
-<!-- <div class="container">
-        <h1>Detail Buku</h1>
-        <div class="col">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/gambar/<?= $row["gambar"]; ?>">
-                    <div class="card-body">
-                        <h5 class="card-title m-1"><?= $row["Judul"] ?></h5>
-                        <p class="card-text"><?= $row["Pengarang"] ?></p>
-                        <p class="card-text"><?= $row["Terbit"] ?></p>
-                        <p class="card-text"><?= $row["Dimensi"] ?></p>
-                        <p class="card-text"><?= $row["ISBN"] ?></p>
-                        <button class="tombol-kembali btn btn-outline-primary"><a href="../index.php">kembali</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
