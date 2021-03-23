@@ -1,8 +1,8 @@
 <?php 
-//Menghubungkan dengan file php lainnya
-require 'php/function.php'
-//Melakukan query
-$result = mysqli_query($conn, "SELECT * FROM data");
+//Menghubungkan dengan file phplainnya
+require 'php/functions.php';
+//Melakukan query dari database
+$books = query("SELECT * FROM data");
 ?>
 
 <!DOCTYPE html>
@@ -11,44 +11,53 @@ $result = mysqli_query($conn, "SELECT * FROM data");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan4b</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Latihan4c</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/DataTables/Buttons-1.5.6/css/buttons.bootstrap4.min.css">
+    
 </head>
 <body>
-<div class="float-md-start">
-<table class="table table-bordered table-striped table-hover text-center">
-  <thead>
-    <tr>
-      <th scope="col">NO</th>
-      <th scope="col">Gambar</th>
-      <th scope="col">Judul</th>
-      <th scope="col">Pengarang</th>
-      <th scope="col">Terbit</th>
-      <th scope="col">Dimensi</th>
-      <th scope="col">ISBN</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php $i = 1 ?>
-    <?php foreach($books as $book) : ?>
-      <p>
-        <a href="php/detail.php?id=<?= $book['id'] ?>">
-          <?= $book["nama"] ?>
-        </a>
-      </p>
-    <tr>
-      <th scope="row"><?= $i ?></th>
-      <td><img src="gambar/<?= $book["gambar"]; ?>"></td>
-      <td><?= $book["Judul"] ?></td>
-      <td><?= $book["Pengarang"] ?></td>
-      <td><?= $book["Terbit"] ?></td>
-      <td><?= $book["Dimensi"] ?></td>
-      <td><?= $book["ISBN"] ?></td>
-    </tr>
-    <?php $i++ ?>
-    <?php endforeach; ?>
-  </tbody>
-</table>
+
+<div class="container mt-3">
+  <h1>NOVEL</h1>
+  <div class="card" style="width: 45rem">
+    <div class="card-body">
+      <div class="row">
+        <div class="col md-6">
+          <?php foreach( $books as $row ) : ?>
+            <p class="judul">
+              <a href="php/detail.php?id=<?= $row['id'] ?>">
+                <img src="assets/gambar/<?= $row["gambar"]; ?>">
+              </a>
+            </p>  
+          <?php endforeach;  ?>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="assets/DataTables/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <!-- jquery -->
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
+
+<!-- <div class="container">
+  <?php foreach( $books as $row ) : ?>
+    <p class="judul">
+      <a href="php/detail.php?id=<?= $row['id'] ?>">
+        <img src="assets/gambar/<?= $row["gambar"]; ?>">
+      </a>
+    </p>   
+  </div>
+  <?php endforeach;  ?> -->
