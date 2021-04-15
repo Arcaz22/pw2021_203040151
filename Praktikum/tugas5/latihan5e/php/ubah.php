@@ -1,4 +1,12 @@
 <?php
+/*
+    Chandra Arcychan Azfar
+    203040151
+    Jumat,13.00
+*/
+?>
+
+<?php
 require 'functions.php';
 
 // ambil data di URL

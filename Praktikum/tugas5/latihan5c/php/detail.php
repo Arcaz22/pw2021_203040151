@@ -1,7 +1,15 @@
-<?php 
+<?php
+/*
+    Chandra Arcychan Azfar
+    203040151
+    Jumat,13.00
+*/
+?>
+
+<?php
 //mengecek apakah  ada id yang di kirimkan
 //jika tidak maka akan di kembalikan ke halaman index.php
-if(!isset($_GET['id'])) {
+if (!isset($_GET['id'])) {
     header("location: ../index.php");
     exit;
 }
@@ -17,6 +25,7 @@ $row = query("SELECT * FROM data WHERE id= $id")[0];
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +33,9 @@ $row = query("SELECT * FROM data WHERE id= $id")[0];
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/detail.css">
-    
+
 </head>
+
 <body>
     <div class="container">
         <h1>Novel</h1>
@@ -37,11 +47,11 @@ $row = query("SELECT * FROM data WHERE id= $id")[0];
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title m-1"><?= $row["Judul"] ?></h5>
-                            <ul>
-                                <li class="card-text"><?= $row["Pengarang"] ?></li>
-                                <li class="card-text"><?= $row["Terbit"] ?></li>
-                                <li class="card-text"><?= $row["Dimensi"] ?></li>
-                            </ul>
+                        <ul>
+                            <li class="card-text"><?= $row["Pengarang"] ?></li>
+                            <li class="card-text"><?= $row["Terbit"] ?></li>
+                            <li class="card-text"><?= $row["Dimensi"] ?></li>
+                        </ul>
                         <button class="tombol-kembali btn btn-outline-primary"><a href="../index.php">kembali</a></button>
                     </div>
                 </div>
@@ -49,4 +59,5 @@ $row = query("SELECT * FROM data WHERE id= $id")[0];
         </div>
     </div>
 </body>
+
 </html>
