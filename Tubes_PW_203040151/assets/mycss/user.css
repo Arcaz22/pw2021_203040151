@@ -1,0 +1,15 @@
+img {
+  max-width: 100%;
+}
+
+.gallery {
+  padding: 80px 0;
+}
+
+.gallery img {
+  background-color: white;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
