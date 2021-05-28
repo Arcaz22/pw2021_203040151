@@ -1,4 +1,7 @@
 <?php
+// Chandra Arcychan Azfar
+// 203040151
+// Jum'at 13.00
 session_start();
 if (!isset($_SESSION["login"])) {
   header("Location: ../crud/login.php");

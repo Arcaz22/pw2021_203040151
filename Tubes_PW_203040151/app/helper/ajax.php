@@ -1,4 +1,7 @@
 <?php
+// Chandra Arcychan Azfar
+// 203040151
+// Jum'at 13.00
 require 'functions.php';
 $books = cari($_GET['keyword']);
 ?>

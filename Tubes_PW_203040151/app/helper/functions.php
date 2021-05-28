@@ -1,4 +1,8 @@
 <?php
+// Chandra Arcychan Azfar
+// 203040151
+// Jum'at 13.00 
+
 //fungsi untuk melakukan koneksi ke database
 function koneksi()
 {

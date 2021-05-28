@@ -1,4 +1,7 @@
 <?php
+// Chandra Arcychan Azfar
+// 203040151
+// Jum'at 13.00
 require '../helper/functions.php';
 
 if (isset($_POST["registrasi"])) {

@@ -1,5 +1,7 @@
 <?php
-
+// Chandra Arcychan Azfar
+// 203040151
+// Jum'at 13.00
 require '../helper/functions.php';
 $id = $_GET['id'];
 
